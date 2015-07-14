@@ -61,7 +61,14 @@ typedef NS_ENUM(NSInteger, EFUN_SCREEN_TYPE)
 // 12 获取配置文件信息
 +(NSDictionary *)getProjectInfoPlist;
 
+// 13 获取app的版本号
++(NSString *)getAppVersion;
 
+// 14 获取app的bundleId
++(NSString *)getAppBundleID;
+
+// 15 获取设备的语言
++(NSString *)getDeviceLanguage;
 
 #pragma mark - 常用基本方法
 

@@ -12,9 +12,7 @@
 #import "netdb.h"
 #import <CommonCrypto/CommonCrypto.h>
 #import <AdSupport/AdSupport.h>
-//#import "EFUNTwPlatFormIPAddress.h"
-//#import "CACFUUID.h"
-
+#import "CAIPAddress.h"
 #import <sys/socket.h>
 #import <sys/sysctl.h>
 #import <net/if.h>
@@ -313,18 +311,18 @@
     return EFUN_SCREEN_UNKNOW;
 }
 
-//#pragma mark - 获取IP地址
-//+(NSString *)getIPAddress
-//{
-//    efunPlatFormInitAddresses () ;
-//    efunPlatFormGetIPAddresses () ;
-//    efunPlatFormGetHWAddresses () ;
-//    NSString * ip=[ NSString stringWithFormat:@"%s", ip_names[1]];
-//    //判断全打印
-//    NSString * systemlog=[NSString stringWithFormat:@"get ip adress:%@",ip];
-//    EFUN_LOG(@"%@", systemlog);
-//    return ip;
-//}
+#pragma mark - 获取IP地址
++(NSString *)getIPAddress
+{
+    efunPlatFormInitAddresses () ;
+    efunPlatFormGetIPAddresses () ;
+    efunPlatFormGetHWAddresses () ;
+    NSString * ip=[ NSString stringWithFormat:@"%s", ip_names[1]];
+    //判断全打印
+    NSString * systemlog=[NSString stringWithFormat:@"get ip adress:%@",ip];
+    EFUN_LOG(@"%@", systemlog);
+    return ip;
+}
 
 #pragma mark - 判断当前网络状态,是否联网
 +(BOOL)connectedToNetWork
@@ -361,6 +359,24 @@
 +(NSDictionary *)getProjectInfoPlist
 {
     return [[NSBundle mainBundle]infoDictionary];
+}
+
+#pragma mark - 获取app的版本号
++ (NSString *)getAppVersion
+{
+    return [[self getProjectInfoPlist] objectForKey:@"CFBundleShortVersionString"];
+}
+
+#pragma mark - 获取app的bundleId
++ (NSString *)getAppBundleID
+{
+    return [[NSBundle mainBundle] bundleIdentifier];
+}
+
+#pragma mark - 获取设备的语言
++(NSString *)getDeviceLanguage
+{
+    return [[NSLocale preferredLanguages] objectAtIndex:0];
 }
 
 #pragma mark - - － － － － － － － －
