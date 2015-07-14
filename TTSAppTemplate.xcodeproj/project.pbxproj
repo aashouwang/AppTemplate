@@ -42,6 +42,7 @@
 		3834AC131B5409B200B41B6F /* Resources_Read_Me.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3834ABFB1B5409B200B41B6F /* Resources_Read_Me.rtf */; };
 		3834AC141B5409B200B41B6F /* Sections_Read_Me.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3834ABFD1B5409B200B41B6F /* Sections_Read_Me.rtf */; };
 		3834AC151B5409B200B41B6F /* Vendors_Read_Me.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3834ABFF1B5409B200B41B6F /* Vendors_Read_Me.rtf */; };
+		84CCEBEB1B54A375000BE78F /* CAIPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEBE91B54A375000BE78F /* CAIPAddress.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		3834ABFB1B5409B200B41B6F /* Resources_Read_Me.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Resources_Read_Me.rtf; sourceTree = "<group>"; };
 		3834ABFD1B5409B200B41B6F /* Sections_Read_Me.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Sections_Read_Me.rtf; sourceTree = "<group>"; };
 		3834ABFF1B5409B200B41B6F /* Vendors_Read_Me.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Vendors_Read_Me.rtf; sourceTree = "<group>"; };
+		84CCEBE91B54A375000BE78F /* CAIPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CAIPAddress.c; sourceTree = "<group>"; };
+		84CCEBEA1B54A375000BE78F /* CAIPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIPAddress.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +276,8 @@
 			children = (
 				3834ABDD1B5409B200B41B6F /* CAFunction.h */,
 				3834ABDE1B5409B200B41B6F /* CAFunction.m */,
+				84CCEBE91B54A375000BE78F /* CAIPAddress.c */,
+				84CCEBEA1B54A375000BE78F /* CAIPAddress.h */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3834ABAC1B5408BF00B41B6F /* ViewController.m in Sources */,
+				84CCEBEB1B54A375000BE78F /* CAIPAddress.c in Sources */,
 				3834ABA31B5408BF00B41B6F /* AppDelegate.m in Sources */,
 				3834AC0B1B5409B200B41B6F /* CAAlertViewDelegate.m in Sources */,
 				3834AC0A1B5409B200B41B6F /* CAAlertView.m in Sources */,
