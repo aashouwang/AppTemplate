@@ -42,6 +42,7 @@
 		3834AC131B5409B200B41B6F /* Resources_Read_Me.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3834ABFB1B5409B200B41B6F /* Resources_Read_Me.rtf */; };
 		3834AC141B5409B200B41B6F /* Sections_Read_Me.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3834ABFD1B5409B200B41B6F /* Sections_Read_Me.rtf */; };
 		3834AC151B5409B200B41B6F /* Vendors_Read_Me.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3834ABFF1B5409B200B41B6F /* Vendors_Read_Me.rtf */; };
+		38A20D051B5AA21C00530538 /* NSString+StringFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A20D041B5AA21C00530538 /* NSString+StringFrame.m */; };
 		84CCEBEB1B54A375000BE78F /* CAIPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEBE91B54A375000BE78F /* CAIPAddress.c */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,8 @@
 		3834ABFB1B5409B200B41B6F /* Resources_Read_Me.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Resources_Read_Me.rtf; sourceTree = "<group>"; };
 		3834ABFD1B5409B200B41B6F /* Sections_Read_Me.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Sections_Read_Me.rtf; sourceTree = "<group>"; };
 		3834ABFF1B5409B200B41B6F /* Vendors_Read_Me.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Vendors_Read_Me.rtf; sourceTree = "<group>"; };
+		38A20D031B5AA21C00530538 /* NSString+StringFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringFrame.h"; sourceTree = "<group>"; };
+		38A20D041B5AA21C00530538 /* NSString+StringFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringFrame.m"; sourceTree = "<group>"; };
 		84CCEBE91B54A375000BE78F /* CAIPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CAIPAddress.c; sourceTree = "<group>"; };
 		84CCEBEA1B54A375000BE78F /* CAIPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIPAddress.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,6 +245,8 @@
 				3834ABCF1B5409B200B41B6F /* UIImage+ColorToImage.m */,
 				3834ABD01B5409B200B41B6F /* UITabBarItem+CreateBarItem.h */,
 				3834ABD11B5409B200B41B6F /* UITabBarItem+CreateBarItem.m */,
+				38A20D031B5AA21C00530538 /* NSString+StringFrame.h */,
+				38A20D041B5AA21C00530538 /* NSString+StringFrame.m */,
 				3834ABD21B5409B200B41B6F /* UIView+RectPosition.h */,
 				3834ABD31B5409B200B41B6F /* UIView+RectPosition.m */,
 			);
@@ -479,6 +484,7 @@
 				3834AC081B5409B200B41B6F /* CAURLConnect.m in Sources */,
 				3834AB9F1B5408BE00B41B6F /* main.m in Sources */,
 				3834AC0E1B5409B200B41B6F /* EfunBaseView.m in Sources */,
+				38A20D051B5AA21C00530538 /* NSString+StringFrame.m in Sources */,
 				3834AC011B5409B200B41B6F /* UIImage+ColorToImage.m in Sources */,
 				3834AC051B5409B200B41B6F /* TTSBaseController.m in Sources */,
 				3834AC031B5409B200B41B6F /* UIView+RectPosition.m in Sources */,
